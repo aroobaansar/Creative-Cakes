@@ -113,31 +113,31 @@
               
                 <div class="cake">
                     <img src="cake1.jpeg" alt="Cake 1" height="200" width="200">
-                    <h2>Wedding Cake</h2>
+                    <h2>Birthday Cake</h2>
                     <p>Rs.2000</p>
                     <button class="add-to-cart-btn" onclick="addToCart('Wedding Cake', 49.99)">Add to Cart</button>
                 </div>
                 <div class="cake">
                     <img src="cake2.jpeg" alt="Cake 1" height="200" width="200">
-                    <h2>Wedding Cake</h2>
+                    <h2>Birthday Cake</h2>
                     <p>Rs.3499</p>
                     <button class="add-to-cart-btn" onclick="addToCart('Wedding Cake', 49.99)">Add to Cart</button>
                 </div>
                 <div class="cake">
                     <img src="cake3.jpeg" alt="Cake 1" height="200" width="200">
-                    <h2>Wedding Cake</h2>
+                    <h2>Birthday Cake</h2>
                     <p>Rs.3999</p>
                     <button class="add-to-cart-btn" onclick="addToCart('Wedding Cake', 49.99)">Add to Cart</button>
                 </div>
                 <div class="cake">
                     <img src="cake4.jpeg" alt="Cake 1" height="200" width="200">
-                    <h2>Wedding Cake</h2>
+                    <h2>Birthday Cake</h2>
                     <p>Rs.1599</p>
                     <button class="add-to-cart-btn" onclick="addToCart('Wedding Cake', 49.99)">Add to Cart</button>
                 </div>
                 <div class="cake">
                     <img src="cake5.jpg" alt="Cake 1" height="200" width="200">
-                    <h2>Wedding Cake</h2>
+                    <h2>Birthday Cake</h2>
                     <p>Rs.2999</p>
                     <button class="add-to-cart-btn" onclick="addToCart('Wedding Cake', 49.99)">Add to Cart</button>
                 </div>
@@ -151,12 +151,34 @@
         </section>
 
         <section id="contact" class="hidden">
+            <h1 class="heading" id="ab">Contact Us</h1>
             <!-- Content for the Contact Us section -->
-            <h2>Contact Us</h2>
+           
             <p>Feel free to reach out to us with your inquiries.</p>
           
-                <p>Email: info@onlinecakeshop.com</p>
-                <p>Phone: 123-456-7890</p>
+            <form id="myForm">
+                <div class="form-row">
+                <label for="name">Name</label>
+                <label for="email" >Email</label>
+            </div>
+            <div class="form-row">
+            
+                <input  type="text" placeholder="Enter Your Name" id="name" name="name" required>
+                <input id="em"  type="email" placeholder="Enter Your Email" id="email" name="email" required>
+            </div>
+<div class="form-col">
+                <label  for="phone">Phone Number</label>
+                <input type="tel" placeholder="Enter Your Phone Number" id="phone" name="phone" required>
+            </div>
+            <div class="form-col">
+                <label for="subject">Subject</label>
+                <textarea id="subject" placeholder="Enter Your Message" name="subject" rows="4" required></textarea>
+            </div>
+            <div class="submit">
+                <button class="Submit" type="button" onclick="sendEmail()">Submit</button>
+            </div>
+              </form>
+          
               
         </section>
 

@@ -74,3 +74,34 @@ function hideAllCategories() {
         category.style.display = 'none';
     });
 }
+function sendEmail() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+  
+      // Get form data
+      const formData = new FormData(this);
+  
+      // Check if form data is empty
+      if (formData.size === 0) {
+        alert("Please fill in all fields before submitting");
+        return;
+      }
+  
+      // Create email body
+      const emailBody = Array.from(formData.entries())
+        .map(entry => `${entry[0]}: ${entry[1]}`)
+        .join('\n');
+  
+      // Send email using JavaScript (dummy implementation)
+      const email = 'creativewebmagic@gmail.com';
+      const subject = 'Contact Form Submission';
+      const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+  
+      // Open default email client to send email
+      window.location.href = mailtoLink;
+  
+      // Show success message
+      alert("Message sent successfully!");
+    });
+  }
+  

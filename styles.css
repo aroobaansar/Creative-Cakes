@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(164, 56, 74);
-   
+   color: white;
     
    
 }
@@ -133,26 +133,19 @@ main {
 }
 .search{
     background-color: rgb(164, 56, 74);
-    padding: 11px 16px;
+    padding: 12px 16px;
     border-radius: 2px;
     color: white;
-    border: 4px;
+    border: solid   #c78989;
   
 }
-.search:hover{
-    cursor: pointer;
-    box-shadow: 0 0 5px rgb(164, 56, 74),
-    0 0 25px rgb(164, 56, 74), 0 0 50px rgb(164, 56, 74), 
-    0 0 100px rgb(164, 56, 74), 0 0 200px rgb(164, 56, 74);
-    font-weight: bold;
 
-
-}
 .search-section input {
     width: 60%;
     padding: 10px;
+    color:  rgb(164, 56, 74) ;
     margin-bottom: 20px;
-    border: #c78989;
+    border: solid  #c78989;
 }
 #about-section {
     display: none; /* Hide the section by default */
@@ -229,7 +222,96 @@ main {
     border: solid white;
     background-color: #ba7575;
 }
+#myForm{
+padding:  0px 80px ;
+}
 
+form{
+    max-width: 50%;
+}
+.hidden p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-left: 71px;
+    
+}
+ form input{
+    height:30px;
+    background-color: transparent;
+    border: 3px solid #c78989; 
+    border-radius: 3px;
+    color: rgb(255, 252, 252);
+    transition: border-color 0.3s ease;
+}
+input:focus{
+    outline: none; /* Remove the default outline */
+    border-color: #f78e8e; /* Set the desired border color when the input is focused */
+    box-shadow: 0 0 5px rgba(34, 32, 32, 0.8);
+}
+label {
+    display: flex;
+    margin-bottom: 5px;
+    color: rgba(233, 217, 217, 0.9);
+    padding: 15px 0px;
+  }
+.form-row label{
+   display: inline-flex;
+   width: 40%;
+}
+.form-row input{
+
+    width: 30%;
+}
+
+.form-col input{
+  
+    width: 70%; /* Set the width to 100% to make it full */
+   
+}
+
+#em{
+    margin-left: 51px;
+}
+textarea{
+    width: 70%;
+    height: 70px;
+    border:  3px solid #c78989; 
+    border-radius: 3px;
+    background-color: transparent;
+    color: white;
+}
+textarea:focus{
+    outline: none; /* Remove the default outline */
+    border-color: #f78e8e; /* Set the desired border color when the input is focused */
+    box-shadow: 0 0 5px rgba(34, 32, 32, 0.8);
+}
+.submit button{
+  background-color: #c78989;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  width: 71%;
+
+  border-radius: 3px;
+}
+.submit{
+    padding: 25px 0;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(164, 56, 74),
+    0 0 25px rgb(164, 56, 74), 0 0 50px rgb(164, 56, 74), 
+    0 0 100px rgb(164, 56, 74), 0 0 200px rgb(164, 56, 74);
+    font-weight: bold;
+
+
+}
+.submit button:hover{
+    cursor: pointer;
+   
+    font-weight: bold;
+}
 footer {
     background-color: transparent;
     color: white;
