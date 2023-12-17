@@ -17,7 +17,7 @@ header {
     align-items: center;
 }
 #header {
-    background: url('Premium\ Photo\ _\ Frame\ of\ food\ ingredients\ for\ baking\ on\ a\ gently\ pink\ pastel_\ baking\ concept_.jpg')  center/cover no-repeat; /* Set your background image */
+    background: url('background.jpg')  center/cover no-repeat; /* Set your background image */
     color: white; /* Text color for the header */
     padding: 20px;
     position: relative;
